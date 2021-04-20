@@ -4,7 +4,6 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -21,10 +20,14 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
 
     private List<EventModel> EventArray;
 
-    public EventAdapter(Context context, ArrayList<EventModel> EventArray, Events events) {
+    public EventAdapter(Context context, ArrayList<EventModel> EventArray, RecycleViewOnItemClick Listner) {
         this.context=context;
-       // this.mListner=Listner;
+        this.mListner=Listner;
         this.EventArray=EventArray;
+    }
+
+    public EventAdapter(Events events, ArrayList<EventModel> myList) {
+
     }
 
     @Override
@@ -41,6 +44,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
 
 
 
+
     }
 
     @Override
@@ -53,7 +57,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
 
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView EventName , EventDescrp;
+        TextView EventName , EventDescrp ;
         private RecycleViewOnItemClick mListener ;
 
         public ViewHolder(@NonNull View itemView ,RecycleViewOnItemClick Listener) {
