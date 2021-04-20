@@ -9,7 +9,12 @@
         android:roundIcon="@drawable/mtc_white_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Microsoft_Tech_Club_ISIMM">
-        <activity android:name=".Home_Page"></activity>
+        <activity android:name=".Member_of_the_month"></activity>
+        <activity android:name=".Formations" />
+        <activity android:name=".Events" />
+        <activity android:name=".Team" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".Home_Page" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

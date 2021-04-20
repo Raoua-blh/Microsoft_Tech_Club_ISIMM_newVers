@@ -20,10 +20,10 @@
         android:id="@+id/titlemtc"
         android:layout_width="271dp"
         android:layout_height="67dp"
-        android:layout_marginTop="60dp"
         android:gravity="center"
         android:text="Microsoft Tech Club ISIMM"
         android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -74,6 +74,7 @@
         app:layout_constraintVertical_bias="0.85" />
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="0dp"
         android:layout_height="609dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -120,12 +121,11 @@
                         android:id="@+id/abouUsTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="4dp"
+                        android:layout_marginBottom="5dp"
                         android:text="About Us"
                         android:textColor="#FFFFFF"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.493"
                         app:layout_constraintStart_toStartOf="parent" />
 
                     <ImageView
@@ -136,7 +136,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="1.0"
+                        app:layout_constraintVertical_bias="0.52"
                         app:srcCompat="@drawable/mtc_white_logo" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -161,19 +161,19 @@
                         android:textColor="#FFFFFF"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.493"
                         app:layout_constraintStart_toStartOf="parent" />
 
                     <ImageView
                         android:id="@+id/events_logo"
-                        android:layout_width="78.69dp"
-                        android:layout_height="81.19dp"
+                        android:layout_width="70.69dp"
+                        android:layout_height="72.19dp"
                         app:layout_constraintBottom_toTopOf="@+id/eventsTxt"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.44"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="1.0"
-                        app:srcCompat="@drawable/mtc_white_logo" />
+                        app:srcCompat="@drawable/ic_book"
+                        tools:ignore="VectorDrawableCompat" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -197,7 +197,6 @@
                         android:textColor="#FFFFFF"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.493"
                         app:layout_constraintStart_toStartOf="parent" />
 
                     <ImageView
@@ -208,8 +207,8 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="1.0"
-                        app:srcCompat="@drawable/mtc_white_logo" />
+                        app:srcCompat="@drawable/ic_facebook"
+                        tools:ignore="VectorDrawableCompat" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -228,12 +227,12 @@
                         android:id="@+id/teamTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="4dp"
+                        android:layout_marginBottom="6dp"
                         android:text="Team"
                         android:textColor="#FFFFFF"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintHorizontal_bias="0.51"
                         app:layout_constraintStart_toStartOf="parent" />
 
                     <ImageView
@@ -244,8 +243,9 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="1.0"
-                        app:srcCompat="@drawable/mtc_white_logo" />
+                        app:layout_constraintVertical_bias="0.53"
+                        app:srcCompat="@drawable/ic_brainstorm"
+                        tools:ignore="VectorDrawableCompat" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -269,19 +269,18 @@
                         android:textColor="#FFFFFF"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.493"
                         app:layout_constraintStart_toStartOf="parent" />
 
                     <ImageView
                         android:id="@+id/trainig_logo"
-                        android:layout_width="78.69dp"
-                        android:layout_height="81.19dp"
+                        android:layout_width="70.69dp"
+                        android:layout_height="72.19dp"
                         app:layout_constraintBottom_toTopOf="@+id/formationtxt"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="1.0"
-                        app:srcCompat="@drawable/mtc_white_logo" />
+                        app:srcCompat="@drawable/ic_presentation"
+                        tools:ignore="VectorDrawableCompat" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -305,7 +304,6 @@
                         android:textColor="#FFFFFF"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.493"
                         app:layout_constraintStart_toStartOf="parent" />
 
                     <ImageView
@@ -316,8 +314,8 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="1.0"
-                        app:srcCompat="@drawable/mtc_white_logo" />
+                        app:srcCompat="@drawable/ic_instagram"
+                        tools:ignore="VectorDrawableCompat" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -345,7 +343,6 @@
                         android:textColor="#FFFFFF"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.493"
                         app:layout_constraintStart_toStartOf="parent" />
 
                     <ImageView
@@ -356,8 +353,8 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="1.0"
-                        app:srcCompat="@drawable/mtc_white_logo" />
+                        app:srcCompat="@drawable/ic_global"
+                        tools:ignore="VectorDrawableCompat" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -382,7 +379,6 @@
                         android:textColor="#FFFFFF"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.493"
                         app:layout_constraintStart_toStartOf="parent" />
 
                     <ImageView
@@ -393,8 +389,8 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="1.0"
-                        app:srcCompat="@drawable/mtc_white_logo" />
+                        app:srcCompat="@drawable/ic_linkedin"
+                        tools:ignore="VectorDrawableCompat" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -418,7 +414,6 @@
                         android:textColor="#FFFFFF"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.493"
                         app:layout_constraintStart_toStartOf="parent" />
 
                     <ImageView
@@ -429,8 +424,8 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="1.0"
-                        app:srcCompat="@drawable/mtc_white_logo" />
+                        app:srcCompat="@drawable/ic_twitter__1_"
+                        tools:ignore="VectorDrawableCompat" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -452,11 +447,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="4dp"
-                        android:text="Member Of the Month "
+                        android:text="Star of the month"
                         android:textColor="#FFFFFF"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.493"
                         app:layout_constraintStart_toStartOf="parent" />
 
                     <ImageView
@@ -467,8 +461,8 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="1.0"
-                        app:srcCompat="@drawable/mtc_white_logo" />
+                        app:srcCompat="@drawable/ic_leadership"
+                        tools:ignore="VectorDrawableCompat" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
