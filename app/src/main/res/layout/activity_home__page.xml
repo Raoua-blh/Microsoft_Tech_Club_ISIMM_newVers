@@ -121,11 +121,12 @@
                         android:id="@+id/abouUsTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
+                        android:layout_marginBottom="4dp"
                         android:text="About Us"
                         android:textColor="#FFFFFF"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
                         app:layout_constraintStart_toStartOf="parent" />
 
                     <ImageView
@@ -227,7 +228,7 @@
                         android:id="@+id/teamTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="6dp"
+                        android:layout_marginBottom="4dp"
                         android:text="Team"
                         android:textColor="#FFFFFF"
                         app:layout_constraintBottom_toBottomOf="parent"

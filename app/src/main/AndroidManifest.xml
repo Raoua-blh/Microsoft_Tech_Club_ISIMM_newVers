@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/mtc_white_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Microsoft_Tech_Club_ISIMM">
-        <activity android:name=".Member_of_the_month"></activity>
+        <activity android:name=".DetailsEvents"></activity>
+        <activity android:name=".Member_of_the_month" />
         <activity android:name=".Formations" />
         <activity android:name=".Events" />
         <activity android:name=".Team" />
