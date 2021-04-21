@@ -25,6 +25,9 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ViewHolder> {
         this.MembArray=MembArray;
     }
 
+    public TeamAdapter(Formations context, ArrayList<TrainingModel> myList, Formations formations) {
+    }
+
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(context).inflate(R.layout.team_model, parent, false);
