@@ -18,8 +18,9 @@ import java.text.DateFormat;
 import java.util.Calendar;
 
 public class Home_Page extends AppCompatActivity {
-ConstraintLayout aboutUsLayout , teamLayout ,eventsLayout ,formationLayout , facebookLayout,instaLayout ,
-        twitterLayout , linkedinLayout ,websiteLayout ,memberofthemontLayout ;
+ConstraintLayout aboutUsLayout , teamLayout ,eventsLayout ,formationLayout , memberofthemontLayout ;
+ImageView facebookLayout,instaLayout ,
+        twitterLayout , linkedinLayout ,websiteLayout ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -112,7 +113,7 @@ ConstraintLayout aboutUsLayout , teamLayout ,eventsLayout ,formationLayout , fac
             }
         });
 
-        linkedinLayout = findViewById(R.id.linkedinLayout);
+        linkedinLayout = findViewById(R.id.linkedInLayout);
         linkedinLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

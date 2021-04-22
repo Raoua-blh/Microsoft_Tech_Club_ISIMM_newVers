@@ -25,8 +25,10 @@
         android:textSize="28sp"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.518" />
 
     <TextView
         android:id="@+id/date"
@@ -40,7 +42,7 @@
         app:layout_constraintBottom_toTopOf="@+id/titlemtc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/include"
-        app:layout_constraintVertical_bias="0.39" />
+        app:layout_constraintVertical_bias="0.296" />
 
     <ImageView
         android:id="@+id/copyright"
@@ -76,13 +78,13 @@
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="0dp"
-        android:layout_height="609dp"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintHorizontal_bias="0.38"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titlemtc"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toTopOf="@+id/include"
+        app:layout_constraintVertical_bias="0.57">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -100,20 +102,36 @@
                 app:layout_constraintVertical_bias="0.774">
 
                 <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline2"
+                    android:id="@+id/guideline5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
+                    app:layout_constraintGuide_end="126dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="156dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
                     app:layout_constraintGuide_begin="206dp" />
+
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/aboutUsLayout"
-                    android:layout_width="137dp"
-                    android:layout_height="123dp"
+                    android:layout_width="100dp"
+                    android:layout_height="91dp"
+                    android:layout_marginTop="8dp"
                     android:background="@drawable/home_red_bg"
                     android:elevation="28dp"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline2"
-                    app:layout_constraintHorizontal_bias="0.71"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintHorizontal_bias="0.815"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
@@ -131,8 +149,8 @@
 
                     <ImageView
                         android:id="@+id/mtc_logo"
-                        android:layout_width="78.69dp"
-                        android:layout_height="81.19dp"
+                        android:layout_width="64dp"
+                        android:layout_height="56dp"
                         app:layout_constraintBottom_toTopOf="@+id/abouUsTxt"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -143,13 +161,13 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/eventsLayout"
-                    android:layout_width="137dp"
-                    android:layout_height="123dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_width="100dp"
+                    android:layout_height="91dp"
+                    android:layout_marginTop="20dp"
                     android:background="@drawable/home_red_bg"
                     android:elevation="28dp"
                     app:layout_constraintEnd_toStartOf="@+id/guideline2"
-                    app:layout_constraintHorizontal_bias="0.724"
+                    app:layout_constraintHorizontal_bias="0.933"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/aboutUsLayout">
 
@@ -166,8 +184,8 @@
 
                     <ImageView
                         android:id="@+id/events_logo"
-                        android:layout_width="70.69dp"
-                        android:layout_height="72.19dp"
+                        android:layout_width="56dp"
+                        android:layout_height="47dp"
                         app:layout_constraintBottom_toTopOf="@+id/eventsTxt"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.44"
@@ -178,50 +196,14 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/facebookLayout"
-                    android:layout_width="137dp"
-                    android:layout_height="123dp"
+                    android:id="@+id/teamLayout"
+                    android:layout_width="100dp"
+                    android:layout_height="91dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/home_red_bg"
                     android:elevation="28dp"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline2"
-                    app:layout_constraintHorizontal_bias="0.724"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/eventsLayout">
-
-                    <TextView
-                        android:id="@+id/fbTxt"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="4dp"
-                        android:text="Facebook"
-                        android:textColor="#FFFFFF"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
-
-                    <ImageView
-                        android:id="@+id/facebook_logo"
-                        android:layout_width="78.69dp"
-                        android:layout_height="81.19dp"
-                        app:layout_constraintBottom_toTopOf="@+id/fbTxt"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/ic_facebook"
-                        tools:ignore="VectorDrawableCompat" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/teamLayout"
-                    android:layout_width="137dp"
-                    android:layout_height="123dp"
-                    android:background="@drawable/home_red_bg"
-                    android:elevation="28dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.264"
-                    app:layout_constraintStart_toStartOf="@+id/guideline2"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
                     app:layout_constraintTop_toTopOf="parent">
 
                     <TextView
@@ -238,8 +220,8 @@
 
                     <ImageView
                         android:id="@+id/team_logo"
-                        android:layout_width="78.69dp"
-                        android:layout_height="81.19dp"
+                        android:layout_width="64dp"
+                        android:layout_height="55dp"
                         app:layout_constraintBottom_toTopOf="@+id/teamTxt"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -251,13 +233,13 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/formationLayout"
-                    android:layout_width="137dp"
-                    android:layout_height="123dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_width="100dp"
+                    android:layout_height="91dp"
+                    android:layout_marginTop="20dp"
                     android:background="@drawable/home_red_bg"
                     android:elevation="28dp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.264"
+                    app:layout_constraintHorizontal_bias="0.071"
                     app:layout_constraintStart_toStartOf="@+id/guideline2"
                     app:layout_constraintTop_toBottomOf="@+id/teamLayout">
 
@@ -268,196 +250,51 @@
                         android:layout_marginBottom="4dp"
                         android:text="Training Session"
                         android:textColor="#FFFFFF"
+                        android:textSize="12sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent" />
 
                     <ImageView
                         android:id="@+id/trainig_logo"
-                        android:layout_width="70.69dp"
-                        android:layout_height="72.19dp"
+                        android:layout_width="54dp"
+                        android:layout_height="45dp"
                         app:layout_constraintBottom_toTopOf="@+id/formationtxt"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.52"
                         app:srcCompat="@drawable/ic_presentation"
                         tools:ignore="VectorDrawableCompat" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/instaLayout"
-                    android:layout_width="137dp"
-                    android:layout_height="123dp"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/home_red_bg"
-                    android:elevation="28dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.264"
-                    app:layout_constraintStart_toStartOf="@+id/guideline2"
-                    app:layout_constraintTop_toBottomOf="@+id/formationLayout">
-
-                    <TextView
-                        android:id="@+id/instaTxt"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="4dp"
-                        android:text="Instagram Page"
-                        android:textColor="#FFFFFF"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
-
-                    <ImageView
-                        android:id="@+id/insta_logo"
-                        android:layout_width="78.69dp"
-                        android:layout_height="81.19dp"
-                        app:layout_constraintBottom_toTopOf="@+id/instaTxt"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/ic_instagram"
-                        tools:ignore="VectorDrawableCompat" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/websiteLayout"
-                    android:layout_width="137dp"
-                    android:layout_height="123dp"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/home_red_bg"
-                    android:elevation="28dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline2"
-                    app:layout_constraintHorizontal_bias="0.712"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/twitterLayout"
-                    app:layout_constraintVertical_bias="0.0">
-
-                    <TextView
-                        android:id="@+id/websiteTxt"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="4dp"
-                        android:text="Our Website"
-                        android:textColor="#FFFFFF"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
-
-                    <ImageView
-                        android:id="@+id/website_logo"
-                        android:layout_width="78.69dp"
-                        android:layout_height="81.19dp"
-                        app:layout_constraintBottom_toTopOf="@+id/websiteTxt"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/ic_global"
-                        tools:ignore="VectorDrawableCompat" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/linkedinLayout"
-                    android:layout_width="137dp"
-                    android:layout_height="123dp"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/home_red_bg"
-                    android:elevation="28dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.264"
-                    app:layout_constraintStart_toStartOf="@+id/guideline2"
-                    app:layout_constraintTop_toBottomOf="@+id/instaLayout">
-
-                    <TextView
-                        android:id="@+id/linkedinTxt"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="4dp"
-                        android:text="LinkedIn Page"
-                        android:textColor="#FFFFFF"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
-
-                    <ImageView
-                        android:id="@+id/linkedin_logo"
-                        android:layout_width="78.69dp"
-                        android:layout_height="81.19dp"
-                        app:layout_constraintBottom_toTopOf="@+id/linkedinTxt"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/ic_linkedin"
-                        tools:ignore="VectorDrawableCompat" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/twitterLayout"
-                    android:layout_width="137dp"
-                    android:layout_height="123dp"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/home_red_bg"
-                    android:elevation="28dp"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline2"
-                    app:layout_constraintHorizontal_bias="0.724"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/facebookLayout">
-
-                    <TextView
-                        android:id="@+id/twitterTxt"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="4dp"
-                        android:text="Twitter Page"
-                        android:textColor="#FFFFFF"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
-
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="78.69dp"
-                        android:layout_height="81.19dp"
-                        app:layout_constraintBottom_toTopOf="@+id/twitterTxt"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/ic_twitter__1_"
-                        tools:ignore="VectorDrawableCompat" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/memberofthemontLayout"
-                    android:layout_width="137dp"
-                    android:layout_height="123dp"
+                    android:layout_width="100dp"
+                    android:layout_height="91dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/home_red_bg"
                     android:elevation="28dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.253"
-                    app:layout_constraintStart_toStartOf="@+id/guideline2"
-                    app:layout_constraintTop_toBottomOf="@+id/linkedinLayout"
-                    app:layout_constraintVertical_bias="0.0">
+                    app:layout_constraintStart_toStartOf="@+id/guideline5"
+                    app:layout_constraintTop_toTopOf="parent">
 
                     <TextView
                         android:id="@+id/memofmonthTxt"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="85dp"
+                        android:layout_height="14dp"
                         android:layout_marginBottom="4dp"
                         android:text="Star of the month"
                         android:textColor="#FFFFFF"
+                        android:textSize="10sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent" />
 
                     <ImageView
                         android:id="@+id/memberofthemonth_logo"
-                        android:layout_width="78.69dp"
-                        android:layout_height="81.19dp"
+                        android:layout_width="64dp"
+                        android:layout_height="55dp"
                         app:layout_constraintBottom_toTopOf="@+id/memofmonthTxt"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -470,6 +307,75 @@
         </LinearLayout>
     </ScrollView>
 
+    <ImageView
+        android:id="@+id/facebookLayout"
+        android:layout_width="53dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.888"
+        app:srcCompat="@drawable/ic_facebook"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/instaLayout"
+        android:layout_width="53dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/facebookLayout"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.634"
+        app:srcCompat="@drawable/ic_instagram"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/twitterLayout"
+        android:layout_width="56dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/instaLayout"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.321"
+        app:srcCompat="@drawable/ic_twitter__1_"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/linkedInLayout"
+        android:layout_width="56dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/twitterLayout"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.043"
+        app:srcCompat="@drawable/ic_linkedin"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/websiteLayout"
+        android:layout_width="51dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_global"
+        tools:ignore="VectorDrawableCompat" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
