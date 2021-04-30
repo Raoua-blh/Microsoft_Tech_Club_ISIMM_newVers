@@ -63,15 +63,13 @@
         android:id="@+id/ournames"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="300dp"
-        android:layout_marginRight="300dp"
         android:rotation="90"
         android:scaleX="-1"
         android:scaleY="-1"
         android:text="Rawaà Bel Hadj Amor&amp;Anas Gara"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/copyright"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.85" />
 
@@ -94,6 +92,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="390dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center|center_horizontal|center_vertical"
                 app:layout_constraintBottom_toBottomOf="@+id/include"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -106,21 +105,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_end="126dp" />
+                    app:layout_constraintGuide_percent="0.67" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guideline4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="156dp" />
+                    app:layout_constraintGuide_percent="0.34" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guideline2"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="206dp" />
+
+                    app:layout_constraintGuide_percent="0.5" />
 
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -131,7 +131,7 @@
                     android:background="@drawable/home_red_bg"
                     android:elevation="28dp"
                     app:layout_constraintEnd_toStartOf="@+id/guideline4"
-                    app:layout_constraintHorizontal_bias="0.815"
+                    app:layout_constraintHorizontal_bias="0.52"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
@@ -311,13 +311,12 @@
         android:id="@+id/facebookLayout"
         android:layout_width="53dp"
         android:layout_height="46dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginLeft="68dp"
-        android:layout_marginTop="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.87"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView2"
-        app:layout_constraintVertical_bias="0.888"
+        app:layout_constraintVertical_bias="0.91"
         app:srcCompat="@drawable/ic_facebook"
         tools:ignore="VectorDrawableCompat" />
 
@@ -325,13 +324,11 @@
         android:id="@+id/instaLayout"
         android:layout_width="53dp"
         android:layout_height="46dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="116dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/facebookLayout"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toBottomOf="@+id/scrollView2"
-        app:layout_constraintVertical_bias="0.634"
+        app:layout_constraintVertical_bias="0.90999997"
         app:srcCompat="@drawable/ic_instagram"
         tools:ignore="VectorDrawableCompat" />
 
@@ -339,13 +336,11 @@
         android:id="@+id/twitterLayout"
         android:layout_width="56dp"
         android:layout_height="46dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="140dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/instaLayout"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
         app:layout_constraintTop_toBottomOf="@+id/scrollView2"
-        app:layout_constraintVertical_bias="0.321"
+        app:layout_constraintVertical_bias="0.90999997"
         app:srcCompat="@drawable/ic_twitter__1_"
         tools:ignore="VectorDrawableCompat" />
 
@@ -353,15 +348,12 @@
         android:id="@+id/linkedInLayout"
         android:layout_width="56dp"
         android:layout_height="43dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="148dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/twitterLayout"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
         app:layout_constraintTop_toBottomOf="@+id/scrollView2"
-        app:layout_constraintVertical_bias="0.043"
+        app:layout_constraintVertical_bias="0.896"
         app:srcCompat="@drawable/ic_linkedin"
         tools:ignore="VectorDrawableCompat" />
 
@@ -376,6 +368,47 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_global"
         tools:ignore="VectorDrawableCompat" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.31"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.50"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.69"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.24"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
