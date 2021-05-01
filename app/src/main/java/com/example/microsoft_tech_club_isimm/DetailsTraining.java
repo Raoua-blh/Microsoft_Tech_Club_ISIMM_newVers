@@ -26,9 +26,11 @@ public class DetailsTraining extends AppCompatActivity {
             String date = (String) extras.get("training_date");
             int img = extras.getInt("training_Img");
             detailTrainingTilte.setText(name);
-            detailTrainingDescrp.setText(descrp);
             detailTrainingImg.setImageResource(img);
             dateDetailTraining.setText(date);
+             {
+                detailTrainingDescrp.setText(descrp + " heelloo bitchsss");
+            }
         }
     }
 }

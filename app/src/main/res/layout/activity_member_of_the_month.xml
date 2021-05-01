@@ -5,5 +5,68 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Member_of_the_month">
+    <include
+        android:id="@+id/include"
+        layout="@layout/background_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="41dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_left_arrow__1_"
+        tools:ignore="VectorDrawableCompat" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabBar"
+        android:layout_width="386dp"
+        android:layout_height="54dp"
+        android:background="@drawable/tablayoutbg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabIndicatorColor="@color/black"
+        app:tabIndicatorFullWidth="false">
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/mmofthemonthTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Member of the Month" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/risingstarTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rising star of the month " />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpagerTab"
+        android:layout_width="0dp"
+        android:layout_height="571dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabBar"
+        app:layout_constraintVertical_bias="1.0">
+
+
+    </androidx.viewpager.widget.ViewPager>
 </androidx.constraintlayout.widget.ConstraintLayout>

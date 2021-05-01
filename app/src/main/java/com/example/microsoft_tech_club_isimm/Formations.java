@@ -1,7 +1,6 @@
 package com.example.microsoft_tech_club_isimm;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -77,6 +76,11 @@ public class Formations extends AppCompatActivity implements RecycleViewOnItemCl
 
     @Override
     public void onItemClick(View view, int position) {
+
+        int itemPosition = trainingRv.getChildLayoutPosition(view);
+        String i = String.valueOf(trainingModels.get(itemPosition));
+        Log.d ("this is ", i) ;
+
         Log.d("hello", "wwwwwwwwwweeeew ");
         Intent intent = new Intent(this, DetailsTraining.class);
         intent.putExtra("training_name", trainingModels.get(position).getTrainingTitle());

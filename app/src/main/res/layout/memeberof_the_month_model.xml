@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/memberImg"
+        android:layout_width="143dp"
+        android:layout_height="140dp"
+        android:src="@drawable/rawaa"
+        app:layout_constraintBottom_toBottomOf="@+id/zina"
+        app:layout_constraintEnd_toEndOf="@+id/zina"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/zina"
+        app:layout_constraintTop_toTopOf="@+id/zina"
+        app:layout_constraintVertical_bias="0.272" />
+
+    <TextView
+        android:id="@+id/mmName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_slab"
+        android:text="Rawaà Ben Hadj AMOR "
+        android:textColor="#7C0808"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/zina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/month"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="April"
+        android:textAllCaps="true"
+        android:textColor="#60151515"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/mmName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/zina"
+        android:layout_width="307dp"
+        android:layout_height="235dp"
+        android:src="@drawable/mmofthemonth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
