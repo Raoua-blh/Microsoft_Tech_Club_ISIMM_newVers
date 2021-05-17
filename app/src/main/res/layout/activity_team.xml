@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Team">
+
     <include
         android:id="@+id/include"
         layout="@layout/background_layout"
@@ -48,46 +49,39 @@
         android:text="Rawaà Ben Hadj Amor"
         android:textColor="#9A2541"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/memberImg"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/memberImg" />
 
     <TextView
         android:id="@+id/position"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tresorier et VPF"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/memberName"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/memberName" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/memberImg"
         android:layout_width="128dp"
         android:layout_height="113dp"
+        android:layout_marginTop="36dp"
         android:src="@drawable/rawaa"
         app:civ_border_color="#FFFFFF"
         app:civ_border_width="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.101" />
+        app:layout_constraintTop_toBottomOf="@+id/teamTitle" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/memberRV"
-        android:layout_width="409dp"
-        android:layout_height="509dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/memberName"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/position" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

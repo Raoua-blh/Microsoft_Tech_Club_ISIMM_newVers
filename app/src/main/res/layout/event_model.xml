@@ -7,7 +7,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/eventsLayout"
-        android:layout_width="380dp"
+        android:layout_width="0dp"
         android:layout_height="121dp"
         android:layout_marginStart="6dp"
         android:layout_marginLeft="6dp"
@@ -44,7 +44,6 @@
             android:text="Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée."
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.22"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/eventName"
             app:layout_constraintVertical_bias="0.36" />

@@ -90,7 +90,7 @@
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="390dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center|center_horizontal|center_vertical"
                 app:layout_constraintBottom_toBottomOf="@+id/include"

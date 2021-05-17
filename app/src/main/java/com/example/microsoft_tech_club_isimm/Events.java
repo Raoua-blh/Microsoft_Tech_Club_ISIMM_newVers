@@ -60,15 +60,15 @@ public class Events extends AppCompatActivity implements RecycleViewOnItemClick 
 
     @Override
     public void onItemClick(View view, int position) {
-//        Log.d("hello", "wwwwwwwwwweeeew ");
-//        Intent intent = new Intent(this, DetailsEvents.class);
-//        intent.putExtra("event_name", EventModels.get(position).getEventName());
-//        intent.putExtra("event_description", EventModels.get(position).getEventDescription());
-//        startActivity(intent);
-        if (position==0)
-        {Intent intent=new Intent(getApplicationContext(),DetailsEvents.class);
-        startActivity(intent);}
-        else  {Intent intent=new Intent(getApplicationContext(),AboutUs.class);
-            startActivity(intent);}
+        Log.d("hello", "wwwwwwwwwweeeew ");
+        Intent intent = new Intent(this, DetailsEvents.class);
+        intent.putExtra("event_name", EventModels.get(position).getEventName());
+        intent.putExtra("event_description", EventModels.get(position).getEventDescription());
+        startActivity(intent);
+//        if (position==0)
+//        {Intent intent=new Intent(getApplicationContext(),DetailsEvents.class);
+//        startActivity(intent);}
+//        else  {Intent intent=new Intent(getApplicationContext(),AboutUs.class);
+//            startActivity(intent);}
     }
 }
